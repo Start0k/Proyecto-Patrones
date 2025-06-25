@@ -27,14 +27,24 @@ Convierte objetos de una fuente externa en objetos válidos del sistema (`Pedido
 Permite que los clientes reciban mensajes cuando su pedido está listo.
 
 ### 4. Prototype (Libre elección)
-**Clases:** `Pedido`, `Cafe`  
+**Clases:** `Pedido`, `Cafe`, `Latte`  
 Permite clonar un pedido existente sin volver a crearlo desde cero.
 
 ## Instrucciones para compilar y ejecutar
 
-1. Abre el proyecto en NetBeans
-2. Asegúrate de que el archivo `Main.java` esté en el paquete `app`
-3. Haz clic derecho en `Main.java` y elige **Run File**
-4. Deberías ver los mensajes de preparación y notificación en la consola
+1. Abre una terminal o consola en la carpeta raíz del proyecto (donde está la carpeta `src/`)
+2. Compila el código con:
+
+   ```bash
+   javac -d out src/app/Main.java
+   ```
+
+3. Ejecuta el programa con:
+
+   ```bash
+   java -cp out app.Main
+   ```
+
+> Asegúrate de tener Java instalado (versión 8 o superior) y que esté en el PATH del sistema.
 
 ---
